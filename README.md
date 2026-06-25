@@ -35,7 +35,7 @@ The core technology uses `face-api.js` to detect faces in real-time, enforcing a
   - Conditional rendering for seamless navigation to the success screen.
 - **Responsive Design:** Adapts smoothly from desktop dashboards to mobile devices.
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 - **Frontend:** React, HTML5 Canvas, CSS Modules
 - **Build Tool:** Vite
