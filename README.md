@@ -8,19 +8,20 @@
 
 A modern, secure driver registration system featuring advanced biometric liveness verification for the global supply chain. This project provides a premium user interface with dynamic validations using webcam-based facial recognition.
 
-## 🚀 Demo
+##  Demo
+[https://biometric-regis.netlify.app/](url)
 
 **[Insert Netlify Link Here]**
 
 > *Note: Provide the live deployment link in the space above to test the biometric registration flow online.*
 
-## 🌟 Overview
+##  Overview
 
 The **BioLogistics Registration** app demonstrates how identity verification can be integrated into a web-based workflow. Originally built in plain HTML/JS, it has been modernized into a robust React application powered by Vite. The UI maintains a sleek, glassmorphic aesthetic with dark-mode undertones, providing an intuitive, "cyber-logistics" feel.
 
 The core technology uses `face-api.js` to detect faces in real-time, enforcing a **liveness challenge** (prompting the user to turn their head) to ensure they are a real person rather than a static photo.
 
-## ✨ Features
+##  Features
 
 - **Modern React Architecture:** Component-based design built with Vite for lightning-fast development.
 - **Biometric Identity Verification:**
@@ -41,11 +42,11 @@ The core technology uses `face-api.js` to detect faces in real-time, enforcing a
 - **AI/ML:** face-api.js (TinyFaceDetector & FaceLandmark68Net)
 - **Deployment-Ready:** Outputs to `/dist` for easy hosting on platforms like Netlify or Vercel.
 
-## 📋 Topics / Tags
+##  Topics / Tags
 
 `react` `nodejs` `vite` `face-api` `biometrics` `liveness-detection` `identity-verification` `frontend` `ui-ux` `logistics` `ai`
 
-## 💻 How to Run Locally
+##  How to Run Locally
 
 ### Prerequisites
 - Node.js (v16+ recommended)
