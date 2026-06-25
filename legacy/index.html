@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logistics Registration | BioLogistics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+        <div class="visual-panel">
+            <div class="panel-overlay"></div>
+            <div class="brand-container">
+                <img src="logo.png" alt="BioLogistics Logo" class="brand-logo">
+                <div class="brand-text">
+                    <h2>Secure Logistics Network</h2>
+                    <p>Next-generation identity verification for the global supply chain.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-panel">
+            <div class="form-container">
+                <header>
+                    <h1>Driver Registration</h1>
+                    <p>Complete your profile to join the fleet.</p>
+                </header>
+
+                <form id="registrationForm">
+                    <div class="input-group">
+                        <label for="fullName">Full Name</label>
+                        <div class="input-wrapper">
+                            <svg class="input-icon" viewBox="0 0 24 24">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            <input type="text" id="fullName" placeholder="Enter output full name" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <div class="input-wrapper">
+                            <svg class="input-icon" viewBox="0 0 24 24">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <input type="email" id="email" placeholder="name@company.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="vehicleType">Vehicle Type</label>
+                            <div class="select-wrapper">
+                                <select id="vehicleType" required>
+                                    <option value="" disabled selected>Select type</option>
+                                    <option value="truck">Heavy Truck</option>
+                                    <option value="van">Delivery Van</option>
+                                    <option value="fleet">Fleet Car</option>
+                                </select>
+                                <svg class="chevron-icon" viewBox="0 0 24 24">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="plate">License Plate</label>
+                            <input type="text" id="plate" placeholder="ABC-1234" required>
+                        </div>
+                    </div>
+
+                    <div class="biometric-card">
+                        <div class="card-header">
+                            <div class="header-title">
+                                <svg class="shield-icon" viewBox="0 0 24 24">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                                <span>Identity Verification</span>
+                            </div>
+                            <span class="status-badge" id="statusBadge">Pending</span>
+                        </div>
+
+                        <div class="camera-stage hidden" id="videoContainer">
+                            <video id="video" autoplay muted playsinline></video>
+                            <canvas id="canvas"></canvas>
+                            <div class="scan-line"></div>
+
+                            <div class="instruction-overlay" id="instructionOverlay">
+                                <div class="instruction-content">
+                                    <span id="instructionText">Initializing Camera...</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="button" id="startBtn" class="btn-check">
+                            Start Secure Scan
+                        </button>
+                    </div>
+
+                    <div class="form-footer">
+                        <button type="submit" id="submitBtn" class="btn-submit" disabled>
+                            Complete Registration
+                        </button>
+                    </div>
+                </form>
+
+                <footer class="legal-footer">
+                    <p>&copy; 2025 BioLogistics Inc. Secure Enrollment.</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
